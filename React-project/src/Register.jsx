@@ -21,7 +21,7 @@ export default function LoginForm({ setIsLoggedIn }) {
     const payload = isSignup ? data : { email: data.email, password: data.password };
 
     try {
-      const res = await fetch(`http://localhost:5000/api/auth/${endpoint}`, {
+      const res = await fetch(`https://weather-app-ex5x.onrender.com/api/auth/${endpoint}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
