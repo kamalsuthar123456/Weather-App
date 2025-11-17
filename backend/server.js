@@ -10,9 +10,10 @@ const app = express();
 app.use(cors({
   origin: [
     "http://localhost:5173",          // local development
-    "https://weather-app-6zrb.vercel.app/" // your vercel live website
+    "https://weather-app-red-three-c8tck4wmcl.vercel.app/" // your vercel live website
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true
 }));
 
